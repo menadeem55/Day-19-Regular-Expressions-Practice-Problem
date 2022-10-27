@@ -24,10 +24,15 @@ public class userRegistration {
 		String email = "^[a-zA-Z]+([_+-.][a-zA-Z])+[@][a-zA-Z]+[.][a-z]{2,3}([.][a-zA-Z]{2})*$";
 		String inputEmailId = sc.next();
 		
+		System.out.println("Enter Mobile Number");
+		String mobileNumber = "^(91)()[6-9]{1}[0-9]{9}$";	//91 8826923224
+		String inputmobileNumber = sc.next();
+		
 		userRegistration ur = new userRegistration();
 		System.out.println(ur.userName(firstName, inputfirstName)); 
 		System.out.println(ur.userName(lastName, inputLastName));
 		System.out.println(ur.userName(email, inputEmailId));
+		System.out.println(ur.userName(mobileNumber, inputmobileNumber));
 															
 
 	}
