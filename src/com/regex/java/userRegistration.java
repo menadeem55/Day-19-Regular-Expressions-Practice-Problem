@@ -20,7 +20,7 @@ public class userRegistration {
 		String lastName = "^[A-Z]{1}[a-z]{2,}$";		//Akhtar = true,	//akhtar = false
 		String inputLastName = sc.next();
 		
-		System.out.println("Enter Your E-mail id: ");	//abc.xyz@bl.co.in - Email has 3 mandatory
+		System.out.println("Enter Your E-mail id: ");	//abc.xyz@bl.co.in
 		String email = "^[a-zA-Z]+([_+-.][a-zA-Z])+[@][a-zA-Z]+[.][a-z]{2,3}([.][a-zA-Z]{2})*$";
 		String inputEmailId = sc.next();
 		
@@ -28,11 +28,16 @@ public class userRegistration {
 		String mobileNumber = "^(91)()[6-9]{1}[0-9]{9}$";	//91 8826923224
 		String inputmobileNumber = sc.next();
 		
+		System.out.println("Enter 8 character Password");
+		String password = "[A-Za-z0-9]{8}$";		//8 character password Nadeem05
+		String inputPassword = sc.next();
+		
 		userRegistration ur = new userRegistration();
 		System.out.println(ur.userName(firstName, inputfirstName)); 
 		System.out.println(ur.userName(lastName, inputLastName));
 		System.out.println(ur.userName(email, inputEmailId));
 		System.out.println(ur.userName(mobileNumber, inputmobileNumber));
+		System.out.println(ur.userName(password, inputPassword));
 															
 
 	}
