@@ -29,7 +29,7 @@ public class userRegistration {
 		String inputmobileNumber = sc.next();
 		
 		System.out.println("Enter 8 character Password");
-		String password = "[A-Za-z0-9]{8}$";		//8 character password Nadeem05
+		String password = "((?=.*[A-Za-z])(?=.*[0-9]).{8,})";		//8 character password Nadeem05
 		String inputPassword = sc.next();
 		
 		userRegistration ur = new userRegistration();
